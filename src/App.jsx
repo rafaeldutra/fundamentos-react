@@ -1,7 +1,8 @@
 import './App.css'
 import React from 'react'
 
-import Input from './components/formulario/input.jsx'
+import Contador from './components/contador/Contador.jsx'
+import Input from './components/formulario/Input.jsx'
 import IndiretaPai from './components/comunicacao/IndiretaPai.jsx'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
@@ -21,27 +22,38 @@ const App =  () => (
         <h1>Fundamentos React </h1>
 
         <div className='Cards'>
+            <Card titulo="#12 - Contador" color="#424242">
+                <Contador numeroInicial={10}/>
+           
+            </Card>
+
             <Card titulo="#11 - Componente Controlado" color="#E45F56">
                 <Input />
             </Card>
+
             <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
                 <IndiretaPai />
             </Card>
+
             <Card titulo="#09 - Comunicação Direta" color="#59323C">
                 <DiretaPai />
             </Card>
+
             <Card titulo="#08 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={21} />
                 <UsuarioInfo usuario={{ nome: 'Fernando' }} />
                 {/* <UsuarioInfo usuario={{}} />
                 <UsuarioInfo  /> */}
             </Card>
+
             <Card titulo="#07 - Desafio Repetição" color="#F05E95">
                 <TabelaProdutos />
             </Card>
+
             <Card titulo="#06 - Repetição" color="#FF4C65">
                 <ListaAlunos />
             </Card>
+
             <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
                 <Familia sobrenome="Silva">
                     <FamiliaMembro nome="Pedro" />
@@ -49,12 +61,14 @@ const App =  () => (
                     <FamiliaMembro nome="Gustavo"/>
                 </Familia>
             </Card>
+
             <Card titulo="#04 - Aletorio" color="#FA6900">
                 <Aleatorio
                     maior={100}
                     menor={1}
                 />
             </Card>
+
             <Card titulo="#03 - Fragmento" color="#E94C6F">
                 <Fragmento />
             </Card>
