@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import Mega from './components/mega/Mega.jsx'
 import Contador from './components/contador/Contador.jsx'
 import Input from './components/formulario/Input.jsx'
 import IndiretaPai from './components/comunicacao/IndiretaPai.jsx'
@@ -22,9 +23,12 @@ const App =  () => (
         <h1>Fundamentos React </h1>
 
         <div className='Cards'>
+            <Card titulo="#13 - Mega" color="#f6b2a0">
+                <Mega quantidadeNumeros={6}/>
+            </Card>
+
             <Card titulo="#12 - Contador" color="#424242">
                 <Contador numeroInicial={10}/>
-           
             </Card>
 
             <Card titulo="#11 - Componente Controlado" color="#E45F56">

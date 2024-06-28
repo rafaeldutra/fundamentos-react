@@ -1,6 +1,6 @@
 import React from "react";
 
-export default props => {
+const IndiretaFilho = props => {
     const callback = props.quandoClicar;
     const min = 50
     const max  = 70
@@ -15,3 +15,5 @@ export default props => {
         </div>
     )
 }
+
+export default IndiretaFilho
