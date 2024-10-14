@@ -3,6 +3,10 @@
     width: 45px;
 }
 
+.Mega label {
+    margin-right: 10px;
+}
+
 .Mega button {
     margin: 25px;
     height: 50px;

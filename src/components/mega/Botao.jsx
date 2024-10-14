@@ -3,7 +3,7 @@ import React from "react";
 const  Botao = props => {
     return (
         <div>
-            <button onClick={props.gerarNumerosMegaSena}>Gerar!</button>
+            <button onClick={props.gerarNumerosMegaSena}>Gerar Números!</button>
         </div>
     )
 }
